@@ -5,6 +5,7 @@ find_package(PkgConfig REQUIRED)
 pkg_check_modules(LIBMSPACK REQUIRED libmspack)
 
 include_directories(${LIBMSPACK_INCLUDE_DIRS})
+include_directories("include")
 add_definitions(-Wall -Wextra -Werror)
 
 add_executable(kwaj_unpack "src/kwaj_unpack")
