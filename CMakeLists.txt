@@ -11,5 +11,5 @@ add_definitions(-Wall -Wextra -Werror)
 add_executable(kwaj_unpack "src/kwaj_unpack")
 target_link_libraries(kwaj_unpack ${LIBMSPACK_LIBRARIES})
 
-add_executable(kwaj_pack "src/kwaj_unpack")
+add_executable(kwaj_pack "src/kwaj_pack")
 target_link_libraries(kwaj_pack ${LIBMSPACK_LIBRARIES})

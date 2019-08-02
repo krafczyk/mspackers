@@ -40,8 +40,8 @@ int main(int argc, char** argv) {
         return 1;
     }
 
-    // Decompress
-    int result = compressor->compress(compressor, input_filepath.c_str(), output_filepath.c_str());
+    // Compress
+    int result = compressor->compress(compressor, input_filepath.c_str(), output_filepath.c_str(), -1);
     if(result != MSPACK_ERR_OK) {
         std::cerr << "There was an error compressing!" << std::endl;
         mspack_destroy_kwaj_compressor(compressor);
